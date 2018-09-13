@@ -6,10 +6,10 @@ module.exports = function solveEquation(equation) {
 
   equation = equation.split(" ");
 
-  a = parseInt(equation[0]);
-  b = parseInt(equation[4]);
+  a = equation[0];
+  b = equation[4];
   if(equation[3] == "-") b = -b;
-  c = parseInt(equation[8]);
+  c = equation[8];
   if(equation[7] == "-") c = -c;
 
   solution[0] = Math.round((-b + Math.sqrt(Math.pow(b,2) - 4*a*c))/2/a, 1);
